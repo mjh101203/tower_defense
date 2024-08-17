@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>타워 디펜스 게임</title>
+    <link rel="stylesheet" href="styles.css"> <!-- CSS 파일 링크 -->
+</head>
+<body>
+    <div id="start-screen">
+        <h1>타워 디펜스 게임</h1>
+        <button id="start-btn">게임 시작</button>
+    </div>
+    <div id="game-area" style="display: none;">
+        <div id="tower">🛡️</div>
+        <div id="score">점수: 100</div>
+    </div>
+    <div id="game-over" style="display: none;">
+        <h1>게임 오버</h1>
+        <p>점수가 0점이 되었습니다!</p>
+        <button id="restart-btn">다시 하기</button>
+    </div>
+    <div id="victory-screen" style="display: none;">
+        <h1>승리</h1>
+        <p>점수가 400점이 되었습니다!</p>
+        <button id="restart-btn">다시 하기</button>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>

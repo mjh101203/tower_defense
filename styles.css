@@ -1,0 +1,91 @@
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background-color: #f0f0f0;
+}
+
+#start-screen {
+    text-align: center;
+    margin-top: 100px;
+}
+
+h1 {
+    color: #333;
+}
+
+button {
+    background-color: #4CAF50; /* Green */
+    color: white;
+    padding: 15px 32px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    margin: 4px 2px;
+    cursor: pointer;
+    border: none;
+    border-radius: 5px;
+}
+
+button:hover {
+    background-color: #45a049; /* Darker green */
+}
+
+#game-area {
+    position: relative;
+    width: 800px;
+    height: 400px;
+    border: 2px solid #333;
+    overflow: hidden;
+    background-color: #e0e0e0;
+}
+
+#tower {
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    width: 60px;
+    height: 100%; /* 화면 높이에 맞게 조정 */
+    background-color: blue;
+    color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 20px;
+    border-radius: 10px;
+}
+
+
+.enemy {
+    position: absolute;
+    right: 0;
+    width: 30px;
+    height: 30px;
+    background-color: red;
+    border-radius: 50%;
+    transition: transform 0.2s ease;
+}
+
+#score {
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    font-size: 24px;
+    color: #333;
+}
+
+#game-over, #victory-screen {
+    text-align: center;
+    display: none;
+    margin-top: 20px;
+}
+
+#game-over h1, #victory-screen h1 {
+    color: #f00; /* Red for game over */
+}
+
+#victory-screen h1 {
+    color: #4CAF50; /* Green for victory */
+}
